@@ -8,15 +8,15 @@ import sbt.complete.DefaultParsers._
 
 object SHOUTplugin extends AutoPlugin {
     object autoImport {
-        val sayAnything = any.+.string // spaceDelimited("Gimme what you got")
         val SHOUT = inputKey[String]("Get SBT to SHOUT")
     }
 
     import autoImport._
 
+    private val sayAnything = any.+.string
+
     override def projectSettings = Seq(
         SHOUT :=  {
-            // curl -X POST -d '{"INPUT": "hello world"}' -H 'Content-Type: application/json'
             val what = trimmed(sayAnything).parsed
 
             val service = new URL("http://API.SHOUTCLOUD.IO/V1/SHOUT")
