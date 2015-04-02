@@ -1,6 +1,8 @@
 # SBT Plugin to [SHOUTCLOUD.IO](http://shoutcloud.io) "ALL CAPS" Service
 
-*Because sometimes SBT just wants to shout.*
+*Because sometimes SBT just wants to SHOUT.*
+
+[ ![Download](https://api.bintray.com/packages/metasim/sbt-plugins/sbt-shout/images/download.svg) ](https://bintray.com/metasim/sbt-plugins/sbt-shout/_latestVersion)
 
 ## Install
 
